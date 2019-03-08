@@ -3,9 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "@blueprintjs/core": "^3.4.0",
+    "@blueprintjs/icons": "^3.1.0",
+    "@ckeditor/ckeditor5-build-classic": "^11.2.0",
+    "@ckeditor/ckeditor5-react": "^1.1.0",
+    "@rails/webpacker": "^4.0.0-rc.2",
+    "classnames": "^2.2.6",
+    "coffeescript": "1.12.7",
+    "debounce": "^1.2.0",
+    "immutability-helper": "^2.7.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "resolve-url-loader": "^2.3.0",
+    "webpack-cli": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
