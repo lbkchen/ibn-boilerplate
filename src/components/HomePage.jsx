@@ -1,22 +1,20 @@
 import React from "react";
 import { Button, Intent } from "@blueprintjs/core";
 import { Link } from "react-router-dom";
-import Navbar from "./common/Navbar";
 
-import Logo from "images/bnc-logo-white.png";
-import ValuesImage from "images/home-background.png";
-import Ruben from "images/team-ruben.jpg";
-import Undergrad from "images/home-undegrad.png";
-import Staff from "images/home-staff.png";
-import Grad from "images/home-grad.png";
-import Center from "images/home-ourcenter-2.png";
-import Donate from "images/home-donate.png";
+import Logo from "../images/bnc-logo-white.png";
+import ValuesImage from "../images/home-background.png";
+import Ruben from "../images/team-ruben.jpg";
+import Undergrad from "../images/home-undegrad.png";
+import Staff from "../images/home-staff.png";
+import Grad from "../images/home-grad.png";
+import Center from "../images/home-ourcenter-2.png";
+import Donate from "../images/home-donate.png";
 
 class HomePage extends React.Component {
   render() {
     return (
       <div className="container home-page">
-        <Navbar />
         {/* Landing Block */}
         <div className="home-page-banner-overlay">
           <div className="home-page-landing block">
