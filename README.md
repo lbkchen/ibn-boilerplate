@@ -3,6 +3,8 @@
 ### Setup
 
 ```
+git clone https://github.com/lbkchen/ibn-boilerplate.git
+cd ibn-boilerplate
 yarn install
 ```
 
