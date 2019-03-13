@@ -1,59 +1,182 @@
 @import "./variables";
+  /* General Layout */
+  
+  .container {
+    width: 100%;
+  }
+  
+  /* BNS Center */
+  
+  .about-page-center  {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+    }
+  
+    .about-page-center-text {
+    width: 55%;
+    }
+    
+    .btn-primary {
+    margin-right: 2%;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .about-page-center-text {
+        width: 100%;
+        }
+    }
+  
+  /* BNS Background */
+  
+  .about-page-background {
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+    }
+  
+  .about-page-background-text {
+    width: 55%;
+    } 
 
-.about-page-who {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.about-page-who-text {
-  display: inline-block;
-  flex: 2;
-}
-
-.about-page-who-text {
-  flex: 1;
-}
-
-.about-page-background {
-  width: 100%;
-  padding: 40px 100px;
-  background-color: rgba(185, 211, 182, 0.36);
-}
-
-.about-page-background-numbers {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-}
-
-.about-page-background-number {
-  display: inline-block;
-  max-width: 40%;
-
-  &.left {
-    align-self: flex-start;
+    @media screen and (max-width: 600px) {
+      .about-page-background-text {
+        width: 100%;
+        } 
+    }
+    
+  
+  /* Team */
+  
+  .about-page-team {
+    padding: 40px 100px;
+  }
+  
+  .about-page-team-row {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
-  &.right {
-    align-self: flex-end;
+  .about-page-team-column {
+    margin: 0 auto;
+  }
+  
+  .about-page-team-container {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  
+  /* Card Itself */
+  .about-page-team-card {
+  line-height: 1.2em;
+  height: 150px;
+  display: flex;
+  text-align: left;
+  background: white;
+  width: 425px;
+  margin-bottom: 30px;
+  }
+
+  
+  .about-page-team-img {
+    max-width: 150px;
+    background: gray;
+    border-radius: 2px;
+  }
+  
+
+  /* Text-Container - Card */
+  .about-page-team-text-container {
+  padding-left: 20px;
+  
+  }
+  
+  
+  /* Font Styling of Text - Card */
+  
+  .about-page-team-description {
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  font-size: 0.675em;
+  }
+  
+
+  
+  
+  
+  
+  /* Areas of Focus*/
+  
+  .about-page-focus {
+    background-color: var(--light-blue);
+    padding: 40px 100px;
+    }
+  
+  .about-page-focus-text {
+    width: 65%;
+  }
+  
+  
+  .about-page-focus-container {
+    padding: 40px 0px;
+    margin: 0 auto;
+  }
+
+  .about-page-focus-row {
+  width: 90%;
+  padding: 0 10px;
+}
+  
+  
+  /* Card Itself */
+  .about-page-focus-card {
+  border-radius: 4px;
+  line-height: 1.2em;
+  max-width: 70em;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .about-page-focus-card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-page-focus-text {
+    width: 100%;
   }
 }
-
-.about-page-background-number-flex {
-  display: flex;
-  flex-flow: row;
-}
-
-.about-page-background-number-num {
-  font-family: $font-stack;
-  color: $gold;
-  font-size: 140px;
-  font-weight: 900;
-}
-
-.about-page-background-number-des {
-  margin-top: 40px;
-  margin-left: 20px;
-}
+  
+  
+  /* Text-Container - Card */
+  .about-page-focus-text-container {
+  padding: 50px;
+  
+  }
+  
+  
+  /* Font Styling of Text - Card */
+  
+  .about-page-focus-description {
+  overflow: scroll;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  }
+  
+  
