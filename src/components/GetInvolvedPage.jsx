@@ -1,13 +1,9 @@
 import React from "react";
 import { Button, Intent } from "@blueprintjs/core";
 import { Link } from "react-router-dom";
-import ValuesImage from "../images/home-background.png";
-
-import Undergrad from "../images/home-undegrad.png";
-import Staff from "../images/home-staff.png";
-import Grad from "../images/home-grad.png";
-import Center from "../images/home-ourcenter-2.png";
-import Donate from "../images/home-donate.png";
+import GetInvolvedImg from "../images/Get_Involved_1_Intro.jpg";
+import StudentCoImg from "../images/Get_Involved_2_Student_Coalition.jpg";
+import FoodPantryImg from "../images/Get_Involved_3_Food_Pantry.jpg";
 
 class GetInvolvedPage extends React.Component {
   render() {
@@ -23,9 +19,12 @@ class GetInvolvedPage extends React.Component {
               </div>
             </div>
             <div className="get-involved-right-container">
-              <div className="get-involved-banner">
-                Place Img Here
-              </div>
+        
+              
+   
+              <img className="get-involved-banner-img" src={GetInvolvedImg} alt="Center"></img>
+        
+ 
               <div className="get-involved-text">
                 <div id="get-involved-get-involved">
                   <h1>Get Involved</h1>
@@ -71,29 +70,39 @@ class GetInvolvedPage extends React.Component {
                     skills that I’ll be able to use even beyond my time with the Food Pantry.”
                   </p>
                 </div>
+
                 <div id="get-involved-coalition">
+                  
                   <h2>Student Coalition</h2>
-                  <p>The Student Coalition is a space for student leaders working towards basic needs security to
-                    come
-                    together and coordinator, collaborate, support, and strategize with one another. The
-                    Coalition
-                    unifies
-                    the student voice (undergraduate and graduate) in basic needs security dialogues and
-                    initiatives,
-                    representing over 15 independent organizations and offices.
-                  </p>
-                  <h2>Food Pantry</h2>
-                  <p>The UC Berkeley Food Pantry is a direct response to the need among the student population
-                    for
-                    more
-                    resources to fight food insecurity––the lack of nutritious food.
-                  </p>
-                </div>
+                  <div className="get-involved-coalition-flex">
+                    <p>The Student Coalition is a space for student leaders working towards basic needs security to
+                      come
+                      together and coordinator, collaborate, support, and strategize with one another. The
+                      Coalition
+                      unifies
+                      the student voice (undergraduate and graduate) in basic needs security dialogues and
+                      initiatives,
+                      representing over 15 independent organizations and offices.
+                    </p>
+                    <img className="student-co-img" src={StudentCoImg} alt="Student Coalition" />
+                    </div>
+               </div>
+                    <h2>Food Pantry</h2>
+                  <div className="get-involved-food-pantry">
+                    <p>The UC Berkeley Food Pantry is a direct response to the need among the student population
+                      for
+                      more
+                      resources to fight food insecurity––the lack of nutritious food.
+                    </p>
+                    <img className="food-pantry-img" src={FoodPantryImg} alt="Center" />
+                  </div>
+
                 <div id="get-involved-volunteer">
                   <h2>Volunteer</h2>
                   <p>Thank you for your interest in volunteering with the UC Berkeley Food Pantry!
                     We are now recruiting volunteers for the summer!
                     <br />
+                
                     <br />Please complete this form If you are
                     interested in
                     joining our incredible volunteer team! If you would like to drop in and volunteer, we’d

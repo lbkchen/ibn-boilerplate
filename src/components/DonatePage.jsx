@@ -6,14 +6,16 @@ import Donate from "../images/home-donate.png";
 class DonatePage extends React.Component {
   render() {
     return (
-      <div className="container home-page">
+      <div className="container donate-page">
 
         {/* Donate */}
-        <div className="home-page-donate block">
+        <div className="donate-page-donate block">
+    
+  
+          <div className="donate-page-left">
           <h1 style={{ width: "100%" }}>Donate to Basic Needs Security</h1>
-          <div className="home-page-right">
             <div
-              className="home-page-donate-text"
+              className="donate-page-donate-text"
               style={{
                 borderBottom: "1px #C4C4C4 solid",
                 marginBottom: "32px",
@@ -35,9 +37,9 @@ class DonatePage extends React.Component {
               <br />
             </div>
 
-            <div className="home-page-donate-label">Donate By Mail</div>
+            <div className="donate-page-donate-label">Donate By Mail</div>
 
-            <div className="home-page-donate-info">
+            <div className="donate-page-donate-info">
               <div className="row">
                 <div className="donate-by-mail left">
                   <div className="info">Check to:</div>
@@ -69,8 +71,8 @@ class DonatePage extends React.Component {
               </div>
             </div>
           </div>
-
-          <img className="home-donate-image" src={Donate} />
+          <img className="donate-image" src={Donate} />
+          
         </div>
 
         {/* End of Container */}

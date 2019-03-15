@@ -1,21 +1,21 @@
 
 @import "./variables";
 
-  
-.get-involved-banner {
-    margin-top: 0px;
-    background-color: gray;
 
-}
 
 
 .get-involved-right-container {
     margin-left: 225px;
     height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 }
 
 .get-involved-text {
-    padding: 10px 40px 10px 35px;
+    padding: 10px 50px 10px 50px;
 }
 
 .get-involved-centered {
@@ -73,5 +73,38 @@
     .get-involved-menu {padding-top: 15px; width: 160px;}
     .get-involved-menu a {font-size: 14px;}
   }
+
+  .get-involved-coalition-flex {
+    width: 100%;
+
+    p {
+      width: 100%;
+
+    }
+
+    img {
+      padding-top: 20px;
+      margin: 0 auto;
+      width: 75%;
+      border-radius: 4px;
+    
+    }
+  }
+
+
+
+  .get-involved-food-pantry {
+    width: 100%;
+    .img, .food-pantry-img {
+      padding-top: 20px;
+      margin: 0 auto;
+      width: 75%;
+      border-radius: 4px;
+    }
+
+  }
+  
+
+
   
   

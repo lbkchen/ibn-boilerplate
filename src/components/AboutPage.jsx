@@ -1,7 +1,22 @@
 import React from "react";
 import { Button, Intent } from "@blueprintjs/core";
 import { Link } from "react-router-dom";
-
+import about_banner from "../images/About_1.jpg";
+import about_center from "../images/About_2_Our Center.jpg";
+import about_background from "../images/About_3_Background.jpg";
+import sara from "../images/About_4_Sara_Tsai.jpg";
+import vikrem from "../images/About_5_Vikrem_Padda.jpg";
+import stella from "../images/About_6_Stella_Zhu.jpg";
+import kiyoko from "../images/About_7_Kiyoko_Thomas.jpg";
+import sally from "../images/About_9_Sally_Liang.jpg";
+import ibrahim from "../images/About_10_Ibrahim_Ramoul.jpg";
+import meg from "../images/About_11_Meg_Prier.jpg";
+import ruben  from "../images/About_12_Ruben_Canedo.jpg";
+import karina from "../images/About_13_Karina_Candela.jpg";
+import about_food_supp  from "../images/About_14_Food Support.jpg";
+import about_housing from "../images/About_15_Housing_Support.jpg";
+import about_econ from "../images/About_16_Economic_Support.jpg";
+import about_faq from "../images/About_17_FAQ.jpg";
 
 class AboutPage extends React.Component {
   render() {
@@ -10,19 +25,30 @@ class AboutPage extends React.Component {
         {/* Container */}
         <div className="about-page-container is-widescreen">
 
-
+        <img className="about-banner" src={about_banner}></img>
           {/* BNS Center  */}
-          <div className="about-page-center ">
+          
+          <div className="about-page-center">
+          <div className="center-block">
+          <div className="left">
+            
             <div className="about-page-center-text">
-              <h1>Our Center</h1>
-            </div>
-            <div className="about-page-center-text">
+            <h1>Our Center</h1>
               <p>
                 The Basic Needs Center serves as a physical resource hub for basic needs resources and services. The Basic
                 Needs Center serves as a space for students to create community and access coordinated basic needs services.
                 We are committed to cultivate wellness and belonging in the Basic Needs Center space.
               </p>
+
+              <p>
+              <b>
+              Location:</b> Lower level of MLK Student Union (BNorth), Suite 72 <br/>
+<b>Mailing Address:</b> 2495 Bancroft Way, Suite 72, Berkeley CA 94720-4500 <br/>
+<b>Open Hours: </b>Monday - Friday, 9 AM - 5 PM. Our center’s hours will be extended throughout the semester. <br/>
+             
+              </p>
               <br />
+          
               <Link to="/">
               <Button
                 large
@@ -32,13 +58,25 @@ class AboutPage extends React.Component {
               />
             </Link>
             </div>
+        </div>
 
+        <div className="right">
+         <img className="about-img" src={about_center}></img>
+        </div>
+          
+          
           </div>
+
+          
+            
+          </div>
+
           {/* BNS Background  */}
           <div className="about-page-background ">
             <div className="about-page-background-text">
               <h1>Background</h1>
             </div>
+            <div className="right"><img className="about-img" src={about_background}></img></div>
             <div className="about-page-background-text">
               <p>
                 Basic Needs Security refers to the food, housing, and economic security of our community. We understand that
@@ -58,8 +96,11 @@ class AboutPage extends React.Component {
                 the UC Berkeley Food Pantry which provides emergency food relief. Crisis interventions include the Food
                 Assistance Program which provides eligible students with financial support for food, as well as the Emergency
                 Housing Support program.</p>
-            </div>
 
+              
+            </div>
+            
+            
           </div>
           {/* Our Team  */}
           <div className="about-page-team ">
@@ -70,9 +111,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-7.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={kiyoko} alt="Img"/>
                     <div className="about-page-team-text-container">
-                      <h4> Kiyoko Thomas</h4>
+                      <h3> Kiyoko Thomas</h3>
                       <p className="about-page-team-description">Basic Needs Manager (Case Management &amp; Operations)
                       </p>
                     </div>
@@ -81,9 +122,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-3.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={ruben} alt="Img"/>
                     <div className="about-page-team-text-container">
-                      <h4>Ruben Canedo</h4>
+                      <h3>Ruben Canedo</h3>
                       <p className="about-page-team-description">Basic Needs Committee Chair </p>
                     </div>
                   </div>
@@ -95,10 +136,10 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-4.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={meg} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Meg Prier
-                      </h4>
+                      <h3>Meg Prier
+                      </h3>
                       <p className="about-page-team-description">Basic Needs Manager (Food)</p>
                     </div>
                   </div>
@@ -106,10 +147,10 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-2.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={karina} alt="Img"/>
                     <div className="about-page-team-text-container">
-                      <h4> Karina Candela
-                      </h4>
+                      <h3> Karina Candela
+                      </h3>
                       <p className="about-page-team-description">Photography &amp; Videography Coordinator
                       </p>
                     </div>
@@ -122,9 +163,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-6.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={sally} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Sally Liang</h4>
+                      <h3>Sally Liang</h3>
                       <p className="about-page-team-description">Finance Coordinator
                       </p>
                     </div>
@@ -133,9 +174,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-9.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={vikrem} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Vikrem Padda</h4>
+                      <h3>Vikrem Padda</h3>
                       <p className="about-page-team-description"> CalFresh Coordinator
                       </p>
                     </div>
@@ -148,9 +189,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-8.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={stella} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Stella Zhu</h4>
+                      <h3>Stella Zhu</h3>
                       <p className="about-page-team-description">Food Pantry Coordinator
                       </p>
                     </div>
@@ -159,10 +200,10 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-5.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={ibrahim} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Ibrahim Ramoul
-                      </h4>
+                      <h3>Ibrahim Ramoul
+                      </h3>
                       <p className="about-page-team-description">Basic Needs Farms and Gardens Coordinator </p>
                     </div>
                   </div>
@@ -174,9 +215,9 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-8.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={sara} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Maria Balcazar Tellez</h4>
+                      <h3>Maria Balcazar Tellez</h3>
                       <p className="about-page-team-description">Graduate Student Researcher
                       </p>
                     </div>
@@ -185,10 +226,10 @@ class AboutPage extends React.Component {
                 {/* column */}
                 <div className="about-page-team-column">
                   <div className="about-page-team-card">
-                    <img className="about-page-team-img" src="/Users/tonyanguyen/indexingbasicneeds/app/assets/images/team-1.jpg" alt="Img" style={{width: '100%'}} />
+                    <img className="about-page-team-img" src={sara} alt="Img"  />
                     <div className="about-page-team-text-container">
-                      <h4>Sara Tsai
-                      </h4>
+                      <h3>Sara Tsai
+                      </h3>
                       <p className="about-page-team-description">Basic Needs Farms and Gardens Coordinator </p>
                     </div>
                   </div>
@@ -215,9 +256,10 @@ class AboutPage extends React.Component {
                 {/* column */}
      
                   <div className="about-page-focus-card">
+                  <div className="left-img"><img className="about-focus-img" src={about_food_supp}></img></div>
                     <div className="about-page-focus-text-container">
-                      <h4>Food Support
-                      </h4>
+                      <h3>Food Support
+                      </h3>
                       <br/>
                       <p className="about-page-focus-description">Food support refers to the provision of food or financial
                         support to
@@ -235,8 +277,9 @@ class AboutPage extends React.Component {
                   </div>
         
                   <div className="about-page-focus-card">
+                  <img className="about-focus-img" src={about_housing}></img>
                     <div className="about-page-focus-text-container">
-                      <h4>Housing Support</h4>
+                      <h3>Housing Support</h3>
                       <br/>
                       <p className="about-page-focus-description">Housing support refers to assistance to enable individuals
                         secure and
@@ -256,8 +299,9 @@ class AboutPage extends React.Component {
              
       
                   <div className="about-page-focus-card">
+                  <img className="about-focus-img" src={about_econ}></img>
                     <div className="about-page-focus-text-container">
-                      <h4>Economic Support</h4>
+                      <h3>Economic Support</h3>
                       <br/>
                       <p className="about-page-focus-description">Economic support refers financial security of having stable and
                         predictable income or other resources to support a standard of living now and in the foreseeable
