@@ -15,7 +15,7 @@
   
   .about-page-center  {
     background-color: white;
-    padding: 40px 150px;
+    padding: 60px 150px;
     img {
       margin-top: 40px;
       height: 80%;
@@ -75,40 +75,69 @@
     }
   
   /* BNS Background */
+
+  $flexSize: 15em;
   
-  .about-page-background {
+  .about-page-background  {
     background-color: var(--light-blue);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 150px;
+    padding: 70px 150px;
     img {
-      margin-top: 20px;
-      margin-bottom: 35px;
+      margin-top: 10px;
       width: 100%;
+      height: 100%;
       object-fit: cover;
       flex: 1 1 auto;
       border-radius: 4px;
     }
+
     }
-  
-  .about-page-background-text {
 
+    .background-block {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .about-page-background-text {
     width: 100%;
-    } 
 
-    @media screen and (max-width: 900px) {
+    }
 
-        
+    .left {
+      width: 60%;
+    }
 
-        .about-page-background {
-          background-color: var(--light-blue);
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          padding: 40px 100px;
-          }
+    .right {
+      width: 30%;
     }
     
+ 
+    @media screen and (max-width: 900px) {
+      .about-page-background-text {
+        width: 100%;
+
+        }
+
+        .background-block {
+          flex-wrap: wrap;
+        }
+
+        .left {
+          width: 100%;
+        }
+
+       .right {
+         width: 100%;
+       }
+
+
+        .about-page-background  {
+          background-color: var(--light-blue);
+          padding: 40px 100px;
+      
+          }
+
+
+    }
   
   /* Team */
   
@@ -136,6 +165,14 @@
     .about-page-team {
       padding: 40px 100px;
     }
+
+    .about-page-team-img {
+      min-width: 200px;
+      height: 200px;
+      background: gray;
+      border-radius: 2px;
+    }
+    
   }
 
   
@@ -148,7 +185,7 @@
   text-align: left;
   background: white;
   background-size: cover;
-  width: 425px;
+  max-width: 425px;
   margin: 30px;
   }
 
@@ -159,7 +196,8 @@
     background: gray;
     border-radius: 2px;
   }
-  
+
+ 
 
   /* Text-Container - Card */
   .about-page-team-text-container {
@@ -191,13 +229,12 @@
   
   
   .about-page-focus-container {
-    padding: 40px 0px;
     margin: 0 auto;
   }
 
   .about-page-focus-row {
-  width: 90%;
-  padding: 0 10px;
+  width: 100%;
+
 
 }
 $flexSize: 25em;
@@ -206,13 +243,14 @@ $boxSpacing: 1.8em;
   /* Card Itself */
   .about-page-focus-card {
     height: $flexSize;
-    max-width: $flexSize * 4;
+    max-width: $flexSize * 3;
     flex: 1 1 auto;
     display: flex;
     background-color: white;
     box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
-  margin-bottom: 50px;
-  border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   img {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -230,9 +268,14 @@ $boxSpacing: 1.8em;
 
   /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 900px) {
+  .about-page-focus {
+    background-color: var(--light-blue);
+    padding: 40px 100px;
+    }
+
   .about-page-focus-card {
     height: fit-content;
-    width: $flexSize;
+    width: 100%;
     flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
@@ -240,10 +283,30 @@ $boxSpacing: 1.8em;
     box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
     border-radius: 4px;
   img {
+    width: 100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     object-fit: cover;
     flex: 1 1 auto;
+  }
+
+  /* Text-Container - Card */
+  .about-page-focus-text-container {
+    padding-top: 20px;
+    padding-left: 20px;
+  padding-right: 20px;
+  
+  }
+  
+  
+  /* Font Styling of Text - Card */
+  
+  .about-page-focus-description {
+    height: 90%;
+  overflow: scroll;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+
   }
 
   }
