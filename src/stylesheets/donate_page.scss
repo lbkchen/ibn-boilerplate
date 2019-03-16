@@ -5,22 +5,34 @@
     padding: 40px 150px;
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
       .donate-image, img {
-        margin-top: 40px;
-        padding: 30px;
-      width: 30%;
-      object-fit: cover;
-      flex: 1 1 auto;
-      border-radius: 4px;
+        margin-top: 50px;
+        display: block;
+      float: right;
       }
   }
 
   
   .donate-page-left {
-    width: 60%;
-    padding-right: 40px;
+    width: 50%;
   }
+
+  @media screen and (max-width: 900px) {
+    .donate-page-left {
+      width: 100%;
+    }
+
+    .donate-image, img {
+      margin-top: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+    
+  }
+
 
   
   

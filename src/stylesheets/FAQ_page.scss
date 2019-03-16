@@ -78,10 +78,15 @@
 
   .FAQ-container {
     padding-top: 40px;
+    padding-bottom: 50px;
     background-color: #F4F4F4;
     height: 100%;
     width: 100%;
 
+  }
+
+  .berkeley-blue {
+    color: var(--berkeley-blue);
   }
 
   .FAQ-card {
@@ -100,6 +105,3 @@
     color: var(--berkeley-blue);
   }
 
-  .FAQ-answer {
-
-  }
