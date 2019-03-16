@@ -17,7 +17,7 @@ class HomePage extends React.Component {
       <div className="container home-page">
         {/* Landing Block */}
         <div className="home-page-banner-overlay">
-          <div className="home-page-landing block">
+          <div className="home-page-landing">
             <h1 className="white-text">Basic Needs Center</h1>
             <div className="home-page-row">
               <div className="home-page-landing-text">
@@ -48,17 +48,19 @@ class HomePage extends React.Component {
                   </Link>
                 </div>
               </div>
-              {/* <div className="home-page-left-img">
+              <div className="home-page-left-img">
               <img className="home-page-logo" src={Logo} alt="logo" />
-            </div> */}
             </div>
+            </div>
+            
           </div>
         </div>
 
         {/* Background Block */}
         <div className="home-page-background block">
-          <h1>Our Vision, Our Mission, Our Values</h1>
+          
           <div className="home-page-background-text">
+          <h1>Our Vision, Our Mission, Our Values</h1>
             <p>
               Basic Needs Security refers to the food, housing, and wellness
               security of our community. We understand that basic needs have a
@@ -83,7 +85,7 @@ class HomePage extends React.Component {
         </div>
 
         {/* Resource Index Block */}
-        <div className="home-page-resource-index block">
+        <div className="home-page-resource-index">
           <div className="home-page-resource-text">
             <h1>Our Resource Index</h1>
             <p>
@@ -94,6 +96,7 @@ class HomePage extends React.Component {
             <p>Our areas of focus are:</p>
           </div>
 
+          <div className="cards-container">
           <div className="home-page-resource-cards">
             <div className="home-page-resource-card">
               <div className="card-img">
@@ -127,6 +130,7 @@ class HomePage extends React.Component {
               </div>
             </div>
           </div>
+
           <Link
             to="/resources"
             style={{ margin: "0px auto", marginTop: "32px" }}
@@ -138,6 +142,10 @@ class HomePage extends React.Component {
               text="Search all resources"
             />
           </Link>
+          </div>
+
+          
+          
         </div>
 
         {/* BNS Center Block */}
@@ -178,7 +186,7 @@ class HomePage extends React.Component {
 
         {/* Student Testimonies */}
 
-        <div className="home-page-testimonies block">
+        <div className="home-page-testimonies">
           <div className="home-page-testimonies-text">
             <h1>Student Testimonies</h1>
             {/* <p>
@@ -196,13 +204,14 @@ class HomePage extends React.Component {
 
               <div className="card-test-container">
                 <p className="card-test-text">
-                  CalFresh improved the quality of my college life tremendously.
+                <h3>CalFresh</h3>
+                  "CalFresh improved the quality of my college life tremendously.
                   Once I received my EBT card, I stopped having to worry about
                   how I’d afford my next meal, and could instead focus on how I
                   would ace my next midterm. No university student should have
                   to prioritize food or shelter above their education, and
                   CalFresh is making this a reality for many students. CalFresh
-                  has mitigated my stress tenfold and I am eternally grateful. -
+                  has mitigated my stress tenfold and I am eternally grateful." -
                   Devin, Class of 2018
                 </p>
               </div>
@@ -214,7 +223,8 @@ class HomePage extends React.Component {
               </div>
               <div className="card-test-container">
                 <p className="card-test-text">
-                  I was struggling to make ends meet during the last month of
+                <h3>Food Assistance Program</h3>
+                  "I was struggling to make ends meet during the last month of
                   spring semester and suffered from food insecurity everyday. I
                   had no idea when my next meal was going to be and I was too
                   afraid to ask for help. After some guidance from my EOP
@@ -224,7 +234,7 @@ class HomePage extends React.Component {
                   Without this program, I would have continued to suffer in
                   silence. This program is crucial to students coming from
                   low-income homes and I'm grateful for the assistance I was
-                  provided in my time of need. - Anonymous, Class of 2019
+                  provided in my time of need." - Anonymous, Class of 2019
                 </p>
               </div>
             </div>
@@ -235,7 +245,8 @@ class HomePage extends React.Component {
               </div>
               <div className="card-test-container">
                 <p className="card-test-text">
-                  How many times have you heard the phrase, "I can't afford to
+                <h3>Food Security Education</h3>
+                  "How many times have you heard the phrase, "I can't afford to
                   eat healthily?" In addition to interacting with my peers,
                   crafting scrumptious recipes, and having a good time, I was
                   also able to walk away with a new outlook on cooking and
@@ -243,20 +254,20 @@ class HomePage extends React.Component {
                   with being expensive, monotonous and inaccessible. This class
                   has taught me how to utilize ingredients more effectively and
                   creatively--often resulting in unique and tasty flavor
-                  profiles. - Kevin Soun, Fall 2017
+                  profiles." - Kevin Soun, Fall 2017
                 </p>
               </div>
             </div>
           </div>
 
-          <Link to="/" style={{ margin: "0 auto", marginTop: "50px" }}>
+          {/* <Link to="/" style={{ margin: "0 auto", marginTop: "50px" }}>
             <Button
               large
               className="button-primary"
               intent={Intent.PRIMARY}
               text="Read our stories"
             />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Donate */}
