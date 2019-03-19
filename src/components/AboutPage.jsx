@@ -17,6 +17,7 @@ import about_food_supp  from "../images/About_14_Food Support.jpg";
 import about_housing from "../images/About_15_Housing_Support.jpg";
 import about_econ from "../images/About_16_Economic_Support.jpg";
 import about_faq from "../images/About_17_FAQ.jpg";
+import ucb_wide from "../images/UCB_Wide.png"
 
 class AboutPage extends React.Component {
   render() {
@@ -49,7 +50,7 @@ class AboutPage extends React.Component {
               </p>
               <br />
           
-              <Link to="/">
+              <Link to="https://ucberkeleybasicneeds.youcanbook.me/">
               <Button
                 large
                 className="button-primary"
@@ -96,6 +97,9 @@ class AboutPage extends React.Component {
                 the UC Berkeley Food Pantry which provides emergency food relief. Crisis interventions include the Food
                 Assistance Program which provides eligible students with financial support for food, as well as the Emergency
                 Housing Support program.</p>
+
+                <p> <b>UC System Basic Needs Model</b> </p>
+                <img className="ucb-wide" src={ucb_wide} alt="Img"/>
 
               
             </div>

@@ -29,7 +29,7 @@ class LearnPage extends React.Component {
               </p>
               <br/>
               <br/>
-              <Link to="/resources">
+              <Link to="https://basic-needs.s3.us-west-2.amazonaws.com/SjRxf1rtAuK64PqqJ45b6Ni5?response-content-disposition=inline%3B%20filename%3D%22HousingSurvey_03022018.pdf%22%3B%20filename%2A%3DUTF-8%27%27HousingSurvey_03022018.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIJYBW6E262AXKSAQ%2F20190319%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20190319T212242Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bcd25e253de9ab2561c6cc5fefac14e7ac925ec50d64d14d4f2b7aa58f50268d">
                     <Button
                       large
                       className="button-primary"
