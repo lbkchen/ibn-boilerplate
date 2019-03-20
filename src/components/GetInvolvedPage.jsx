@@ -56,6 +56,43 @@ class GetInvolvedPage extends React.Component {
                     allocated
                     responsibilities.
                   </p>
+                  
+                  <div className="opportunity">
+
+                   <div className="opportunity_title">Seeking finance intern</div>
+
+                  <p>
+                  The finance team is looking for a driven and ambitious candidate who is interested in learning about nonprofit management as well as accounting. The intern will help establishing a nonprofit for Basic Needs Security.
+He/she will also be responsible for processing donor thank you letters to recognize revenue and conduct reimbursement paperwork.
+</p>
+
+<p>
+Skills needed:</p>
+
+<ul>
+  <li>Strong communication, organization, and research skills</li>
+  <li>Excellent attention to detail</li>
+  <li>Ability to work independently and as part of a team</li>
+  <li>Experience with nonprofits preferred</li>
+
+
+</ul>
+
+                    
+           
+                  
+                  
+                  </div>
+                  
+
+
+
+
+
+
+
+
+
                   <p className="get-involved-testimony">
                     “Working with the food pantry has been an insightful experience because it not only allowed
                     me
@@ -75,14 +112,9 @@ class GetInvolvedPage extends React.Component {
                   
                   <h2>Student Coalition</h2>
                   <div className="get-involved-coalition-flex">
-                    <p>The Student Coalition is a space for student leaders working towards basic needs security to
-                      come
-                      together and coordinator, collaborate, support, and strategize with one another. The
-                      Coalition
-                      unifies
-                      the student voice (undergraduate and graduate) in basic needs security dialogues and
-                      initiatives,
-                      representing over 15 independent organizations and offices.
+                    <p>The Student Coalition is a space for student leaders working towards basic needs security to come together and coordinator, collaborate, support, and strategize with one another. The Coalition unifies the student voice (undergraduate and graduate) in basic needs security dialogues and initiatives, representing between 10 to 15 independent organizations and offices annually. If interested in joining, please contact Sara Tsai at 
+                      <a href="mailto:saratsai112@berkeley.edu"> saratsai112@berkeley.edu.  </a>
+
                     </p>
                     <img className="student-co-img" src={StudentCoImg} alt="Student Coalition" />
                     </div>
@@ -99,29 +131,21 @@ class GetInvolvedPage extends React.Component {
 
                 <div id="get-involved-volunteer">
                   <h2>Volunteer</h2>
-                  <p>Thank you for your interest in volunteering with the UC Berkeley Food Pantry!
-                    We are now recruiting volunteers for the summer!
-                    <br />
+                  <p>Thank you for your interest in volunteering with our UC Berkeley Basic Needs programs including the Basic Needs Center and the Food Pantry!
+                    <div className="opportunity">
+                    
+                    <div className="opportunity_title">Food Pantry</div>
+                    <p>The UC Berkeley Food Pantry is a direct response to the need among the student population for more resources to fight food insecurity––the lack of nutritious food.</p>
+                    </div>
+                  
                 
-                    <br />Please complete this form If you are
-                    interested in
-                    joining our incredible volunteer team! If you would like to drop in and volunteer, we’d
-                    love
-                    extra
-                    help
-                    restocking on Tuesdays &amp; Fridays 9:30am-11am! <br /><br />Please reach out to us at
-                    foodpantry@berkeley.edu
-                    if
-                    you
-                    have any additional questions.
+                    
                   </p>
-                  <p>We will do our best to post additional special volunteer opportunities as they come up
-                    through
-                    the
-                    semester. This may include helping out with restocking, food distribution, mobile pop-up
-                    pantries,
-                    and
-                    gardening!
+                  <p>
+We are now recruiting volunteers for the summer! Please complete this form If you are interested in joining our incredible volunteer team! If you would like to drop in and volunteer, we’d love extra help restocking on Tuesdays & Fridays 9:30am-11am! Please reach out to us at <a href="mailto:foodpantry@berkeley.edu"> foodpantry@berkeley.edu  </a> if you have any additional questions.
+                  </p>
+                  <p>
+                  We will do our best to post additional special volunteer opportunities as they come up through the semester. This may include helping out with restocking, food distribution, mobile pop-up pantries, and gardening!
                   </p>
                   <p className="get-involved-testimony">“Volunteering at the Food Pantry has empowered me to help
                     make a change in the Berkeley

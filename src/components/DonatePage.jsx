@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Intent } from "@blueprintjs/core";
 import { Link } from "react-router-dom";
-import Donate from "../images/home-donate.png";
+import Donate from "../images/Donate_1.jpg";
 
 class DonatePage extends React.Component {
   render() {
